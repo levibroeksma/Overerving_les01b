@@ -3,6 +3,8 @@ package nl.novi.javaprogrammeren;
 import nl.novi.javaprogrammeren.overerving.ApolloRocket;
 import nl.novi.javaprogrammeren.overerving.Rocket;
 
+import static nl.novi.javaprogrammeren.overerving.ApolloRocket.*;
+
 public class Main {
     /*
     Bekijk onderstaande code. Er zijn twee klasse, twee objecten.
@@ -20,7 +22,9 @@ public class Main {
         genericRocket.fly(10);
         System.out.println(genericRocket.toString());
 
-        ApolloRocket ar = new ApolloRocket(100, 2);
+
+        ApolloRocket ar = new ApolloRocket(100, 20);
+        ar.fly(10);
         System.out.println(ar);
     }
 }

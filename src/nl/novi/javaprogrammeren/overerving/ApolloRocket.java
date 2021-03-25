@@ -21,4 +21,8 @@ public class ApolloRocket extends Rocket {
         return sb.toString();
     }
 
+    public int calculateMetersFlown(int fuel) {
+        return fuel * amountOfRocketEngines * 100;
+    }
+
 }
